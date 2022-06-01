@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc -w"
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "typescript": "^4.7.2"
-  }
+  },
+  "devDependencies": {
+    "turbo": "^1.2.14"
+  },
+  "workspaces": ["packages/*"]
 }

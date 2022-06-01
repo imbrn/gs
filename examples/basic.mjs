@@ -1,4 +1,4 @@
-import { Orchestrator } from '../dist/orchestrator.js';
+import { Orchestrator } from '../packages/core/dist/orchestrator.js';
 
 globalThis.stuff = Orchestrator.create([], {
   theme: 'dark',
