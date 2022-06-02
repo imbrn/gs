@@ -6,9 +6,7 @@ export interface Plugin<State> {
 
 export type PluginAction<State> =
   | { id: 'init' }
-  | { id: 'before-change-state'; newState: State }
-  | { id: 'change-state'; newState: State }
-  | { id: 'after-change-state'; oldState: State }
-  | { id: 'after-change-state'; oldState: State }
+  | { id: 'before-state-change'; newState: State }
+  | { id: 'after-state-change'; oldState: State }
   | { id: 'before-notify-state-change'; oldState: State }
   | { id: 'after-notify-state-change'; oldState: State };

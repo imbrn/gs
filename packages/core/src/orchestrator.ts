@@ -26,9 +26,9 @@ export class Orchestrator<State> implements Context<State> {
 
   set state(state: State) {
     const oldState = this.state;
-    this._visit({ id: 'before-change-state', newState: state });
+    this._visit({ id: 'before-state-change', newState: state });
     this._state = state;
-    this._visit({ id: 'after-change-state', oldState: oldState });
+    this._visit({ id: 'after-state-change', oldState: oldState });
 
     if (this.state !== oldState) {
       this._notifyStateChange(oldState);
