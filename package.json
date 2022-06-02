@@ -1,21 +1,24 @@
 {
   "name": "gs",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Global shared state management",
   "main": "index.js",
   "scripts": {
     "build": "turbo run build",
-    "test": "turbo run test",
+    "test": "turbo run test && npm run test:samples",
+    "test:samples": "npx ts-node tests/test-samples.ts",
     "lint": "turbo run lint",
     "dev": "turbo run dev"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "imbrn",
+  "license": "MIT",
   "dependencies": {
     "typescript": "^4.7.2"
   },
   "devDependencies": {
+    "@types/node": "^17.0.38",
+    "ts-node": "^10.8.0",
     "turbo": "^1.2.14"
   },
   "workspaces": ["packages/*"]

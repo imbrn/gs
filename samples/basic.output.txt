@@ -1,0 +1,24 @@
+{ theme: 'dark', language: 'pt-BR', user: null }
+state changed: {
+  "theme": "light",
+  "language": "pt-BR",
+  "user": null
+}
+light
+state changed: {
+  "theme": "light",
+  "language": "pt-BR",
+  "user": {
+    "token": "123456"
+  }
+}
+{ token: '123456' }
+state changed: {
+  "theme": "light",
+  "language": "en-US",
+  "user": {
+    "token": "123456"
+  }
+}
+en-US
+{ theme: 'light', language: 'en-US', user: { token: '123456' } }
