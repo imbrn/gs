@@ -1,8 +1,5 @@
-import { Observer } from './observer';
-import { Plugin } from './plugin';
-
-export interface Context<State> {
+export interface Context<State, Plugin, Observer> {
   state: State;
-  readonly plugins: Plugin<State>[];
-  readonly observers: Set<Observer<State>>;
+  readonly plugins: Plugin[];
+  readonly observers: Set<Observer>;
 }

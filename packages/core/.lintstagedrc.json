@@ -1,0 +1,4 @@
+{
+  "*.{js,jsx,ts,tsx}": "eslint --cache --fix --ignore-path packages/core/.eslintignore",
+  "*.{js,jsx,ts,tsx,html,css,md}": "prettier --write"
+}
